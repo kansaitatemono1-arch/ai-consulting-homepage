@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>あなたの名前 | Profile</title>
+    <meta
+      name="description"
+      content="あなたの名前のプロフィール、活動内容、実績を紹介するホームページです。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="トップへ戻る">
+        <span class="brand-mark">YN</span>
+        <span>あなたの名前</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="メインナビゲーション" data-nav>
+        <a href="#about">Profile</a>
+        <a href="#strengths">Strengths</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero-workspace.png" alt="" />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Profile Website</p>
+          <h1 id="hero-title">あなたの名前</h1>
+          <p class="hero-lead">
+            考えを整理し、伝わる言葉と使いやすい形に整えることを大切にしています。
+          </p>
+          <div class="hero-actions" aria-label="主要リンク">
+            <a class="button primary" href="#works">実績を見る</a>
+            <a class="button secondary" href="#contact">連絡する</a>
+          </div>
+        </div>
+        <dl class="hero-facts" aria-label="基本情報">
+          <div>
+            <dt>Role</dt>
+            <dd>Designer / Creator</dd>
+          </div>
+          <div>
+            <dt>Based</dt>
+            <dd>Japan / Remote</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Web, UX, Writing</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section intro-band" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2 id="about-title">はじめまして。</h2>
+        </div>
+        <div class="about-layout">
+          <p class="about-lead">
+            人や事業の魅力を整理し、Webサイト、文章、ビジュアルの形に落とし込む活動をしています。
+            目的に合う情報設計と、読み手が迷わない見せ方を重視しています。
+          </p>
+          <div class="profile-note">
+            <p>
+              好きなこと、得意なこと、これまでの経験を短くまとめるエリアです。
+              職種、専門分野、現在取り組んでいることに合わせて文章を差し替えてください。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="strengths" aria-labelledby="strengths-title">
+        <div class="section-heading">
+          <p class="eyebrow">Strengths</p>
+          <h2 id="strengths-title">大切にしていること</h2>
+        </div>
+        <div class="strength-grid">
+          <article class="strength-card">
+            <span class="card-number">01</span>
+            <h3>整理する</h3>
+            <p>複雑な情報を読み解き、必要な順番と粒度に整えます。</p>
+          </article>
+          <article class="strength-card">
+            <span class="card-number">02</span>
+            <h3>伝える</h3>
+            <p>読み手に合わせて、言葉と見た目の温度を調整します。</p>
+          </article>
+          <article class="strength-card">
+            <span class="card-number">03</span>
+            <h3>形にする</h3>
+            <p>小さく試しながら、公開できる品質まで仕上げます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section muted" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <p class="eyebrow">Works</p>
+          <h2 id="works-title">実績・活動</h2>
+        </div>
+        <div class="work-list">
+          <article class="work-item">
+            <div>
+              <p class="work-type">Website</p>
+              <h3>プロジェクト名を入力</h3>
+            </div>
+            <p>
+              制作したWebサイト、企画、資料、イベントなどの概要を2行程度で紹介します。
+            </p>
+          </article>
+          <article class="work-item">
+            <div>
+              <p class="work-type">Writing</p>
+              <h3>記事・発信テーマを入力</h3>
+            </div>
+            <p>
+              発信している内容や、これまでにまとめたテーマを紹介します。
+            </p>
+          </article>
+          <article class="work-item">
+            <div>
+              <p class="work-type">Project</p>
+              <h3>現在の取り組みを入力</h3>
+            </div>
+            <p>
+              いま力を入れている活動や、今後広げたい領域を記載します。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Timeline</p>
+          <h2 id="timeline-title">これまで</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <time datetime="2024">2024</time>
+            <p>活動を始めたきっかけや、最初の取り組みを記載します。</p>
+          </li>
+          <li>
+            <time datetime="2025">2025</time>
+            <p>経験、学び、制作したものなど、変化が伝わる出来事を記載します。</p>
+          </li>
+          <li>
+            <time datetime="2026">2026</time>
+            <p>現在取り組んでいること、これから目指していることを記載します。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">ご連絡はこちらから</h2>
+          <p>
+            お仕事の相談、制作の依頼、活動への問い合わせなど、お気軽にご連絡ください。
+          </p>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:hello@example.com">メールする</a>
+            <a class="button outline" href="https://example.com" target="_blank" rel="noreferrer">リンク集</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 あなたの名前</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
