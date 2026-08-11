@@ -372,6 +372,188 @@ summary {
   padding: 24px;
 }
 
+.visual-icon {
+  --icon-color: var(--green);
+  position: relative;
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(31, 111, 97, 0.2);
+  border-radius: 8px;
+  color: var(--icon-color);
+  background:
+    linear-gradient(135deg, rgba(31, 111, 97, 0.12), rgba(47, 95, 134, 0.08)),
+    var(--surface);
+}
+
+.visual-icon::before,
+.visual-icon::after {
+  position: absolute;
+  content: "";
+}
+
+.icon-input::before {
+  top: 14px;
+  left: 19px;
+  width: 22px;
+  height: 30px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  background:
+    linear-gradient(currentColor, currentColor) 5px 9px / 12px 2px no-repeat,
+    linear-gradient(currentColor, currentColor) 5px 16px / 12px 2px no-repeat,
+    linear-gradient(currentColor, currentColor) 5px 23px / 8px 2px no-repeat;
+}
+
+.icon-input::after {
+  right: 13px;
+  bottom: 13px;
+  width: 14px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transform: rotate(-38deg);
+}
+
+.icon-consult::before {
+  top: 15px;
+  left: 13px;
+  width: 34px;
+  height: 24px;
+  border: 2px solid currentColor;
+  border-radius: 6px;
+}
+
+.icon-consult::after {
+  right: 16px;
+  bottom: 17px;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(38deg);
+}
+
+.icon-start::before {
+  top: 14px;
+  left: 15px;
+  width: 31px;
+  height: 31px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.icon-start::after {
+  top: 27px;
+  left: 28px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: -10px -8px 0 -1px currentColor, 11px 8px 0 -1px currentColor;
+}
+
+.icon-budget::before {
+  top: 15px;
+  left: 16px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.icon-budget::after {
+  top: 27px;
+  left: 23px;
+  width: 16px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
+.service-visual {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.icon-ai {
+  --icon-color: var(--green);
+}
+
+.icon-ai::before {
+  top: 24px;
+  left: 24px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: -13px -10px 0 -2px currentColor, 16px -7px 0 -2px currentColor, -9px 16px 0 -2px currentColor, 15px 14px 0 -2px currentColor;
+}
+
+.icon-ai::after {
+  top: 20px;
+  left: 20px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.icon-automation {
+  --icon-color: var(--blue);
+}
+
+.icon-automation::before {
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  background:
+    linear-gradient(currentColor, currentColor) 0 9px / 100% 2px no-repeat,
+    linear-gradient(currentColor, currentColor) 0 19px / 100% 2px no-repeat,
+    linear-gradient(90deg, currentColor, currentColor) 10px 0 / 2px 100% no-repeat,
+    linear-gradient(90deg, currentColor, currentColor) 20px 0 / 2px 100% no-repeat;
+}
+
+.icon-automation::after {
+  right: 10px;
+  bottom: 12px;
+  width: 16px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(38deg);
+}
+
+.icon-web {
+  --icon-color: var(--coral);
+}
+
+.icon-web::before {
+  top: 15px;
+  left: 12px;
+  width: 36px;
+  height: 30px;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+  background:
+    linear-gradient(currentColor, currentColor) 0 8px / 100% 2px no-repeat,
+    radial-gradient(circle, currentColor 2px, transparent 3px) 7px 3px / 7px 7px no-repeat,
+    radial-gradient(circle, currentColor 2px, transparent 3px) 15px 3px / 7px 7px no-repeat;
+}
+
+.icon-web::after {
+  top: 31px;
+  left: 20px;
+  width: 21px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
 .item-mark,
 .card-number,
 .plan-type,
@@ -436,29 +618,10 @@ summary {
 }
 
 .service-topline {
-  display: grid;
-  gap: 14px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
   margin-bottom: 16px;
-}
-
-.service-label {
-  display: inline-grid;
-  place-items: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  color: #ffffff;
-  background: var(--green);
-  font-size: 0.78rem;
-  font-weight: 900;
-}
-
-.service-label.blue {
-  background: var(--blue);
-}
-
-.service-label.coral {
-  background: var(--coral);
 }
 
 .service-item ul,
