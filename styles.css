@@ -202,11 +202,11 @@ summary {
 }
 
 .hero h1 {
-  max-width: 920px;
+  max-width: 780px;
   margin: 0;
-  font-size: clamp(2.5rem, 6vw, 5.2rem);
+  font-size: clamp(2.05rem, 4.3vw, 3.75rem);
   font-weight: 900;
-  line-height: 1.08;
+  line-height: 1.16;
 }
 
 .hero-lead {
@@ -789,7 +789,7 @@ summary {
   }
 
   .hero h1 {
-    font-size: 2.45rem;
+    font-size: 2.05rem;
   }
 
   .hero-service {
@@ -854,7 +854,7 @@ summary {
   }
 
   .hero h1 {
-    font-size: 2.05rem;
+    font-size: 1.72rem;
   }
 
   .hero-service {
