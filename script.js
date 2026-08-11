@@ -2,12 +2,20 @@ const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 
+if (header && nav && navToggle) {
 const updateHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 16);
 };
 
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
+
+const closeNav = () => {
+  nav.classList.remove("is-open");
+  header.classList.remove("is-open");
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-label", "メニューを開く");
+};
 
 navToggle.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("is-open");
@@ -21,8 +29,12 @@ nav.addEventListener("click", (event) => {
     return;
   }
 
-  nav.classList.remove("is-open");
-  header.classList.remove("is-open");
-  navToggle.setAttribute("aria-expanded", "false");
-  navToggle.setAttribute("aria-label", "メニューを開く");
+  closeNav();
 });
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeNav();
+  }
+});
+}
