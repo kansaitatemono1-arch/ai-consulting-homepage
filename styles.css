@@ -220,6 +220,10 @@ summary {
   font-weight: 700;
 }
 
+.hero-lead span {
+  display: block;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
