@@ -193,6 +193,14 @@ summary {
   color: #f4bc68;
 }
 
+.hero-service {
+  width: min(760px, 100%);
+  margin-bottom: 18px;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  line-height: 1.45;
+  text-transform: none;
+}
+
 .hero h1 {
   max-width: 920px;
   margin: 0;
@@ -784,6 +792,10 @@ summary {
     font-size: 2.45rem;
   }
 
+  .hero-service {
+    font-size: 1.16rem;
+  }
+
   .hero-lead {
     font-size: 1rem;
   }
@@ -843,6 +855,10 @@ summary {
 
   .hero h1 {
     font-size: 2.05rem;
+  }
+
+  .hero-service {
+    font-size: 1.05rem;
   }
 
   .hero-actions {
